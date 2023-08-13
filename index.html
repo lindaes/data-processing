@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Looping Forms</title>
+     <title>Data Processing</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/main.css">
@@ -35,7 +35,7 @@ max-width:75px;
  </head>
  <body>
      <header>
-     <h1 class="page-header">Looping Forms</h1>
+     <h1 class="page-header">Data Processing</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
             <a href="#">Link</a>
@@ -46,6 +46,8 @@ max-width:75px;
      
    <main class="wrapper">
  
+<p>This project uses HTML, JavaScript, and CSS, it replicates a shopping cart where users can select 1 of each of the items and when submitted will recieve the total cost and itam details. </p>
+
     <h2 class="subheader">Add your shipping info below:</h2>
     <div id="output">
     <form method="get" action="" class="main-form"> 
@@ -214,7 +216,9 @@ myShipping += `<p>${key}: ${value}</p>`;
 myOutput = `<div id="container">`;//will store data for display
  
 
-      myCart = '<h3>Cart Contents</h3><p>${myCart}</p><p>Total: $$(myTotal)</p>';
+      myCart = `<h3>Cart Contents</h3>
+      <p>${myCart}</p>
+      <p>Total: $${myTotal}</p>`
 
 
 myShipping ="<h3>Shipping Info</h3>" + myShipping;
